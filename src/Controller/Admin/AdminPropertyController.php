@@ -23,6 +23,7 @@ class AdminPropertyController extends AbstractController
     }
 
     /**
+     * Show the property management
      * @Route("/admin", name="admin.property.index")
      * @return \Symfony\Component\HttpFoundation\Response
      */
@@ -33,6 +34,7 @@ class AdminPropertyController extends AbstractController
     }
 
     /**
+     * Create Property
      * @Route("/admin/property/create", name="admin.property.new")
      */
     public function new(Request $request)
@@ -55,6 +57,7 @@ class AdminPropertyController extends AbstractController
     }
 
     /**
+     * Delete property
      * @Route("/admin/property/delete/{id}", name="admin.property.delete", methods="DELETE|POST")
      * @param Property $property
      * @return \Symfony\Component\HttpFoundation\RedirectResponse
@@ -69,6 +72,8 @@ class AdminPropertyController extends AbstractController
     }
 
     /**
+     * Edit property
+     * Show the form 
      * @Route("/admin/property/{id}", name="admin.property.edit", methods="GET|POST")
      * @param Property $property
      * @param Request $request

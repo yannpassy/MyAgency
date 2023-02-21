@@ -10,6 +10,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class HomeController extends AbstractController
 {
     /**
+     * Home page
      * @Route("/", name="home")
      * @return Response
      */
@@ -20,8 +21,6 @@ class HomeController extends AbstractController
             'properties' => $properties
         ]);
     }
-
-    // TODO Show all properties
 
     /**
      * @Route("/phpinfo", name="phpinfo")

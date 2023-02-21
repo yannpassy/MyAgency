@@ -18,6 +18,8 @@ class PropertyController extends AbstractController
     }
 
     /**
+     * Show all properties
+     * TODO: Show all the properties infos
      * @Route("/property", name="property.index")
      * @return Response
      */
@@ -29,6 +31,7 @@ class PropertyController extends AbstractController
     }
 
     /**
+     * Show the detail of the property
      * @Route("/property/{slug}-{id}", name="property.show", requirements={"slug": "[a-z0-9\-]*"})
      * @param Property $property
      * @return Response
